@@ -1,14 +1,14 @@
 var express = require('express');
 var alexa = require('alexa-app');
-var PORT = process.env.port || 8080;
+var PORT = process.env.port || 80;
 
 var app = express();
 var alexaApp = new alexa.app("colorbuddy");
 
 alexaApp.express({
 	expressApp: app,
-	checkCert: false
-	// debug: true
+	checkCert: false,
+	debug: true
 })
 
 app.set("view engine", "jade");
