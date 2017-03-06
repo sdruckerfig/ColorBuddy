@@ -1,6 +1,8 @@
 var express = require('express');
 var alexa = require('alexa-app');
-var PORT = process.env.port || 80;
+var PORT = process.env.PORT || 3000;
+
+console.log(process.env.PORT);
 
 var app = express();
 var alexaApp = new alexa.app("colorbuddy");
