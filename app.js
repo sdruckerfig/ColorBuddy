@@ -43,6 +43,6 @@ alexaApp.intent("ColorToHex", {
 alexaApp.intent("AMAZON.HelpIntent");
 
 
-app.listen(PORT);
-console.log("Listening on port " + PORT + ", try http://localhost:" + PORT + "/colorbuddy");
+// app.listen(PORT);
+// console.log("Listening on port " + PORT + ", try http://localhost:" + PORT + "/colorbuddy");
 
