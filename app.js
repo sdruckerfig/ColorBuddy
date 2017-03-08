@@ -60,7 +60,14 @@ alexaApp.intent("ColorToHex", {
     }
 );
 
-alexaApp.intent("AMAZON.HelpIntent");
+alexaApp.intent("AMAZON.HelpIntent", {}, function(request, response) {
+    response.say("Here's some help. Try saying 'Ask HexColor Buddy about Blue'");
+    response.card({
+        type: "Simple",
+        title: "HexColor Buddy",
+        content: "Valid syntax:\nAsk HexColor Buddy about blue\nAsk HexColor Buddy about green."
+    });
+});
 
 
 app.listen(PORT);
